@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="outin.js"></script>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <title>Convert perimeterx payload</title>
+</head>
+<body>
+  <nav>
+        <a href="/">Decode & Encode</a>
+        
+        <a href="/fingerprint.html">Fingerprint</a>
+        
+    </ul>
+  </nav>
+    <header>
+        <h1>PX Decode</h1>
+        <p>Grab the payload and uuid from the /s or /collector request</p>
+      </header>
+      <main>
+        <input id="payload" placeholder="Input Payload" type="text">
+        <input id="uuid" placeholder="Input UUID" type="text">
+        
+        <button onclick="payloadReverse()" id="submit">Submit</button>
+        <pre><code id="data">{blah blah blah}</code></pre>
+        <pre><code id="date">{blah blah blah}</code></pre>
+      </main>
+      <header>
+        <h1>PX Encode</h1>
+        <p>Grab fingerprint data and uuid</p>
+      </header>
+      <section>
+        <input id="fingerprint" placeholder="Input Fingerprint" type="text">
+        <input id="uuide" placeholder="Input UUID" type="text">
+        <input id="startTime" placeholder="Input start time" type="text">
+        <button onclick="payloadEncode()" id="submit">Submit</button>
+        <pre><code id="data_e">{blah blah blah}</code></pre>
+      </main>
+      </section>
+   
+</body>
+</html>
