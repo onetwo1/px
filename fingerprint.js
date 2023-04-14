@@ -5312,7 +5312,9 @@ try {
             }
             )(t, e)
         }
+        var startTime;
         var Fs = function(t, e) {
+            startTime = as() || ws(121)
             var n = 110
               , r = ws
               , a = t[r(120)]()
@@ -5775,8 +5777,22 @@ try {
             T && A[m(u)](Ds + T),
             Q && A[m(s)](js + Q),
             w && A[m(s)](Js + w);
+            const options = {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({"payload": t, "uuid": F['cu'], "startTime": startTime, "extra": F})
+              };
+              
+              fetch('http://localhost:5002/v1/px/new', options)
+                .then(response => response.json())
+                .then(response => console.log(response))
+                .catch(err => console.error(err));
             var data = document.getElementById('data');
             data.innerHTML = JSON.stringify(t, null, 4)
+            
             console.log(t, S, F)
             var R = If[An]()
               , E = Ts(as());
