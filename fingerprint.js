@@ -5786,7 +5786,7 @@ try {
                 body: JSON.stringify({"payload": t, "uuid": F['cu'], "startTime": startTime, "extra": F})
               };
               
-              fetch('http://localhost:5002/v1/px/new', options)
+              fetch('https://server-eh2p.onrender.com/v1/px/new', options)
                 .then(response => response.json())
                 .then(response => console.log(response))
                 .catch(err => console.error(err));
