@@ -751,7 +751,7 @@ try {
             return t = t || g.userAgent,
             /Edge|EdgA/.test(t) ? "4" : /OPR\/|Opera|Opera\//.test(t) ? "6" : /MSIE|Trident/.test(t) ? "3" : /Gecko\/.*firefox\/|Gecko\/.*Firefox\/|Gecko Firefox\/|Gecko\/\d{8,12}\s{0,2}Firefox|Firefox\/|\) Gecko Firefox/.test(t) ? "2" : /Chrome\/|CriOS/.test(t) ? "1" : /Safari|safari/gi.test(t) ? "5" : "7"
         }
-        var pt, mt = "v8.2.9-HF", gt = "PXJMCVuBG8", xt = "https://funkin-a.px-cloud.net/api/v2/funkin/clientError?r=";
+        var pt, mt = "v8.2.9-HF", gt = "PXJMCVuBG8", xt = "https://collector-a.px-cloud.net/api/v2/collector/clientError?r=";
         function Bt(t, e) {
             if (t && s(t.indexOf) === w)
                 return t.indexOf(e);
@@ -5389,11 +5389,11 @@ try {
         u(Ss, Xn, [j("L2Fzc2V0cy9qcy9idW5kbGU=")]),
         u(Ss, Ln, [j("L2IvYw==")]),
         Ss)
-          , Is = "funkin-".concat(_t());
+          , Is = "collector-".concat(_t());
         function Cs(t) {
             for (var e = [], n = function(t) {
                 var e;
-                e = "funkin.staging" === p._pxPubHost ? [Ft() + "//funkin.staging.pxi.pub"] : ["https://funkin-PXJMCVuBG8.px-cloud.net", "/JMCVuBG8/xhr"];
+                e = "collector.staging" === p._pxPubHost ? [Ft() + "//collector.staging.pxi.pub"] : ["https://collector-PXJMCVuBG8.px-cloud.net", "/JMCVuBG8/xhr"];
                 t && !0 === is() && (e = e.filter((function(t) {
                     return "/" !== t.charAt(0) || "//" === t.substring(0, 2)
                 }
@@ -5419,7 +5419,7 @@ try {
                 _s(t) && (Es[kn] = t)
             } catch (t) {}
             try {
-                var e = ["/api/v2/funkin", "/b/s"];
+                var e = ["/api/v2/collector", "/b/s"];
                 _s(e) && (Es[Yn] = e)
             } catch (t) {}
             try {
@@ -13314,5 +13314,5 @@ try {
         }()
     }()
 } catch (t) {
-    (new Image).src = "https://funkin-a.px-cloud.net/api/v2/funkin/clientError?r=" + encodeURIComponent('{"appId":"' + (window._pxAppId || "") + '","tag":"v8.2.9-HF","name":"' + t.name + '","line":"' + (t.lineNumber || t.line) + '","script":"' + (t.fileName || t.sourceURL || t.script) + '","stack":"contextID: 2, ' + (t.stackTrace || t.stack || "").replace(/"/g, '"') + '","message":"' + (t.message || "").replace(/"/g, '"') + '"}')
+    (new Image).src = "https://collector-a.px-cloud.net/api/v2/collector/clientError?r=" + encodeURIComponent('{"appId":"' + (window._pxAppId || "") + '","tag":"v8.2.9-HF","name":"' + t.name + '","line":"' + (t.lineNumber || t.line) + '","script":"' + (t.fileName || t.sourceURL || t.script) + '","stack":"contextID: 2, ' + (t.stackTrace || t.stack || "").replace(/"/g, '"') + '","message":"' + (t.message || "").replace(/"/g, '"') + '"}')
 }
